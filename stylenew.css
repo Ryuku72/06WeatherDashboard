@@ -1,0 +1,119 @@
+/* Reset Code */
+
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+ padding: 30px;
+ background-color: white;
+ border-bottom-right-radius: 15px;
+ border-bottom-left-radius: 15px;
+}
+
+header .title, .subtitle{
+    color: black;
+    font-family: 'Fredericka the Great', cursive
+}
+
+.search-container {
+    border: transparent;
+    background-color: skyblue;
+    border-radius: 30px;
+}
+
+.search-container h4 {
+    font-family:'Share Tech Mono', monospace;
+    color: white;
+    font-size: 3vh;
+}
+
+#searchText {
+    width: 60%;
+    height: 40px;
+    font-size: 2vh;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+#error {
+    color: red;
+    font-size: 3vh;
+    font-family:'Share Tech Mono', monospace;
+}
+
+#previous-results {
+    padding-left: 3vw;
+}
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0; 
+    background-color: palevioletred;
+	width: 100%;
+	height: 6vh;
+	border-bottom: none;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+footer p {
+    font-family: 'Frijole', cursive;
+	color: white;
+	text-align: end;
+	padding-right: 20px;
+	padding: 20px;
+	font-size: 2vh;
+	line-height: 2vh;;
+	margin: 0;
+}
