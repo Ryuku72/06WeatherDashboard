@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <!-- heading -->
     <header>
             <H1 class="title">Red Toolbox Weather Report</H1>
@@ -39,17 +38,19 @@
         <div id="today" class = "hide">
         <div class="container today-container">
             <div class="row">
-                <div class="col-6">
-                    <h2 class="location">Location</h2>
-                    <h5 class="date1">Day 1</h5>
-                    <h5 class="weatherCon">Weather Condition</h5>
-                    <img class="img1" src="">
-                    <h1 class="temp1">Degrees<span>&deg;C</span></h1>
+                <div class="col-4">
+                    <h1 class="location">Location</h1>
+                    <p class="temp1">Degrees<span>&deg;C</span></p>
+                    <p class="date1">Day 1</p>
                 </div>
-                <div class="col-6">
-                    <h5 class="humidity">Humidty</h5>
-                    <h5 class="wind">Wind</h5>
-                    <h5 class="uvIndex">UV index</h5>
+                <div class="col-4">
+                    <p class="weatherCon">Weather Condition</p>
+                    <p class="humidity">Humidty</p>
+                    <p class="wind">Wind</p>
+                    <p class="uvIndex">UV index</p>
+                </div>
+                <div class="col-4">
+                    <img class="img1" src="">
                 </div>
             </div>
         </div>
@@ -61,28 +62,28 @@
             <div id="future" class="hide">
             <div class="row">
 
-                <div class="col">
+                <div class="col-3" id="day2">
                     <h3 class="date2">Day 2</h3>
                     <img class="img2" src="">
                     <h5 class="temp2">Temperture</h5>
                     <h5 class="humid2">Humid</h5>
                 </div>
 
-                <div class="col">
+                <div class="col-3" id="day3">
                     <h3 class="date3">Day 3</h3>
                     <img class="img3" src="">
                     <h5 class="temp3">Temperture</h5>
                     <h5 class="humid3">Humid</h5>
                 </div>
 
-                <div class="col">
+                <div class="col-3" id="day4">
                     <h3 class="date4">Day 4</h3>
                     <img class="img4" src="">
                     <h5 class="temp4">Temperture</h5>
                     <h5 class="humid4">Humid</h5>
                 </div>
 
-                <div class="col">
+                <div class="col-3" id="day5">
                     <h3 class="date5">Day 5</h3>
                     <img class="img5" src="">
                     <h5 class="temp5">Temperture</h5>
@@ -91,12 +92,14 @@
             </div>
             </div>
         </div>
-        </div>
+    
     </section>
 
-    <footer>
+    <footer id="footer">
         <p>Foreign Tools Prj 2020</p>
     </footer>
+
+
 </body>
 
 <script src="scriptnew.js"> </script>

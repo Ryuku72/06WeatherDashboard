@@ -113,9 +113,9 @@ $(document).ready(function() {
             function populateData() {
 
               // Transfer content to HTML
-              $(".location").text(response.city.name + " Weather Details");
+              $(".location").text(response.city.name);
               $(".date1").text(dayName);
-              $(".weatherCon").text(response.list[0].weather[0].main);
+              $(".weatherCon").text("Conditions: " + response.list[0].weather[0].main);
               $(".wind").text("Wind Speed: " + response.list[0].wind.speed + "m/sec");
               $(".humidity").text("Humid: " + response.list[0].main.humidity + "%");
     
@@ -148,18 +148,6 @@ $(document).ready(function() {
                 });
     
     
-              function weatherIcon1() {
-                //create an img and give the attribute a src.
-                var weatherIcon = response.list[0].weather[0].icon;
-                var imgEl = $("<img>");
-                var imgURL = "http://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
-                imgEl.attr("src", imgURL);
-                $(".location").append(imgEl);
-              }
-    
-              weatherIcon1();
-    
-    
               //Day 2 - 5 Temp & Humidity
               $(".date2").text(days[d.getDay()+1]);
               $(".temp2").html("Temp: " + response.list[1].main.temp + "&deg;C");
@@ -178,6 +166,8 @@ $(document).ready(function() {
               $(".humid5").text("Humidity: " + response.list[4].main.humidity + "%");
     
               //Day 2 - 5 Icons
+              var weatherIcon1 = response.list[0].weather[0].icon;
+              $(".img1").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon1 + "@2x.png");
               var weatherIcon2 = response.list[1].weather[0].icon;
               $(".img2").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon2 + "@2x.png");
               var weatherIcon3 = response.list[2].weather[0].icon;

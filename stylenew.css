@@ -52,16 +52,35 @@ table {
 }
 
 header {
- padding: 30px;
- background-color: white;
- border-bottom-right-radius: 15px;
- border-bottom-left-radius: 15px;
+width: 65%;
+height: 12rem; 
+background-color: palevioletred;
+border-bottom-right-radius: 30px;
+padding: 30px;
+
+margin-bottom: 40px;
 }
 
-header .title, .subtitle{
-    color: black;
-    font-family: 'Fredericka the Great', cursive
+body{
+    position: relative;
+    min-height: 100%;
+    min-height: 130vh
 }
+
+header{
+    color: white;
+    font-family:'Share Tech Mono', monospace;
+    font-weight: bolder;;
+}
+
+.title {
+    font-size: 5vh;
+}
+.subtitle {
+    font-size: 3vh;
+}
+
+/*search area*/
 
 .search-container {
     border: transparent;
@@ -71,8 +90,12 @@ header .title, .subtitle{
 
 .search-container h4 {
     font-family:'Share Tech Mono', monospace;
-    color: white;
     font-size: 3vh;
+    padding-left: 30px;
+}
+
+.search-container p {
+    padding-left: 30px;
 }
 
 #searchText {
@@ -81,6 +104,11 @@ header .title, .subtitle{
     font-size: 2vh;
     margin: 5px;
     margin-bottom: 10px;
+    padding:20px;
+}
+
+input {
+    padding-left: 30px;
 }
 
 #error {
@@ -90,29 +118,83 @@ header .title, .subtitle{
 }
 
 #previous-results {
-    padding-left: 3vw;
+    padding-left: 30px;
+}
+
+/*Today Container */
+
+.today-container {
+    background-color: palegreen;
+    border: none;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.location {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 7vh;
+    padding: 10px;
+
+}
+
+.temp1 {
+    font-family: 'Share Tech Mono', monospace;
+    padding: 10px;
+    font-size: 4vh;
+    color: orange;
+}
+
+.date1 {
+    padding: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 4vh;
+}
+
+.weatherCon, .humidity, .wind, .uvIndex {
+    padding: 10px;
+    font-size: 3vh;
+    text-align: start;
+}
+
+.img1 {
+    width: 100% auto;
+    height: 100%;
+}
+
+/*Futue Box */
+
+.future-container {
+background-color: palegoldenrod;
+text-align: center;
+height: 30vh;
+padding: 20px;
+border-radius: 20px;
+
 }
 
 
+/*Footer*/
 
-
-footer {
+#footer {
     position: absolute;
-    bottom: 0; 
+    border: purple dotted 5px;
+    border-bottom: none;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+	height: 3rem; 
     background-color: palevioletred;
-	width: 100%;
-	height: 6vh;
-	border-bottom: none;
 	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;
+    border-top-left-radius: 15px;
+   
 }
 
-footer p {
+#footer p {
     font-family: 'Frijole', cursive;
 	color: white;
 	text-align: end;
-	padding-right: 20px;
-	padding: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 	font-size: 2vh;
 	line-height: 2vh;;
 	margin: 0;
