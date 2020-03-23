@@ -1,0 +1,80 @@
+.my-jumbotron {
+    background-color: red;
+    font-family: 'Monoton', cursive;
+    border-bottom: black solid 15px;
+    position: relative;
+    height: 20vh;
+    width: 100% auto;
+    padding: 20px;
+}
+
+h1 {line-height: 10vh;
+}
+
+.side-container {
+    margin: 20px;
+    float: left;
+    width: 35%;
+}
+
+.search-container {
+    border: solid black 2px;
+    padding: 20px;
+    height: 20vh;
+    width: 22vw;
+    margin-bottom: 20px;
+}
+
+.previous-results{
+    border: solid black 2px;
+    padding: 20px;
+    height: 20vh;
+    width: 22vw;
+}
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.today-container {
+    border: 1px solid grey;
+    height: 40vh;
+    width: 70vw;
+    padding: 20px;
+}
+
+.future-container {
+    margin: 20px;
+}
+
+.day2, .day3, .day4, .day5 {
+  border: black solid 2px;
+  padding: 10px;
+}
