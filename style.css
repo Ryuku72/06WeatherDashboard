@@ -65,6 +65,8 @@ body {
     text-align: center;
     background-color: skyblue;
     border-radius: 30px;
+    height: 25vh;
+    padding: 20px;
 }
 
 .search-container h4 {
