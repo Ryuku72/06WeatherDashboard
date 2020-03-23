@@ -54,8 +54,8 @@ table {
 body {
     position: relative;
     min-height: 100%;
-    min-height: 125vh;
-    margin: 20px;
+    min-height: 130vh;
+    margin: 20px 0px;
 }
 
 /*search area*/
@@ -63,16 +63,20 @@ body {
 .search-container {
     border: transparent;
     text-align: center;
+    height: 25vh;
     background-color: skyblue;
     border-radius: 30px;
-    height: 25vh;
-    padding: 20px;
+}
+
+header {
+margin: 20px 0;
+padding: 10px;
 }
 
 .search-container h4 {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 3vh;
-    padding-left: 30px;
+    font-size: 5vh;
+    padding: 10px;
 }
 
 .search-container p {
@@ -104,6 +108,11 @@ input {
 }
 
 /*Today Container */
+
+main {
+    margin: 20px 0;
+    padding: 10px;
+    }
 
 .today-container {
     background-color: palegreen;
@@ -154,9 +163,10 @@ input {
     height: 30vh;
     padding: 20px;
     border-radius: 20px;
-
 }
-
+.date2, .date3, .date4, .date5 {
+font-family: 'Share Tech Mono', monospace;
+}
 
 /*Footer*/
 
@@ -164,7 +174,7 @@ input {
     position: absolute;
     border: purple dotted 5px;
     bottom: 0;
-    right: 0;
+    right: 30px;
     width: 30%;
     padding: 10px;
     height: 13rem;
