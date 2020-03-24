@@ -1,50 +1,134 @@
 /* Reset Code */
 
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+*/ html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
@@ -64,7 +148,7 @@ body {
 }
 
 .title {
-    font-size: 5vh;  
+    font-size: 5vh;
     font-family: 'Fredericka the Great', cursive;
 }
 
@@ -73,7 +157,7 @@ body {
     font-size: 2vh;
 }
 
-#header p{
+#header p {
     font-size: 3vh;
     font-family: 'Fredericka the Great', cursive;
 }
@@ -81,9 +165,16 @@ body {
 aside {
     background-color: orange;
     padding: 30px;
-    width: 100%;
-    height: 600px; 
+    min-height: 100%;
+    height: 900px 100%;
     font-family: 'Share Tech Mono', monospace;
+    font-size: 3vh;
+}
+
+aside p {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4vh;
+    color: white;
 }
 
 /*search area*/
@@ -108,8 +199,8 @@ nav {
 #searchText {
     width: 90%;
     font-size: 2vh;
-    text-align: end; 
-    padding: 10px;   
+    text-align: end;
+    padding: 10px;
 }
 
 .boxProp {
@@ -136,11 +227,11 @@ main {
     background-color: palegreen;
     height: 60%;
     border: none;
-   padding: 30px;
+    padding: 30px;
 }
 
 .location {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Fredericka the Great', cursive;
     font-size: 9vh;
     text-align: center;
 }
@@ -150,7 +241,7 @@ main {
 }
 
 .temp1 {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Fredericka the Great', cursive;
     font-size: 5vh;
     color: orange;
     text-align: start;
@@ -160,9 +251,10 @@ main {
     padding: 30px;
     padding-right: 80px;
 }
+
 .date1 {
     color: orange;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Fredericka the Great', cursive;
     font-size: 6vh;
     text-align: center;
 }
@@ -171,6 +263,8 @@ main {
 .humidity,
 .wind,
 .uvIndex {
+    padding: 10px;
+    font-family: 'Share Tech Mono', monospace;
     font-size: 3vh;
     text-align: center;
 }
@@ -188,13 +282,20 @@ section {
     text-align: center;
 }
 
-#day2, #day3, #day4, #day5 {
+#day2,
+#day3,
+#day4,
+#day5 {
+    font-family: 'Fredericka the Great', cursive;
     width: 100%;
 }
 
-.date2, .date3, .date4, .date5 {
-    
-font-family: 'Share Tech Mono', monospace;
+.date2,
+.date3,
+.date4,
+.date5 {
+
+    font-family: 'Share Tech Mono', monospace;
 }
 
 footer {
