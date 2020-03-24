@@ -65,7 +65,7 @@ $(document).ready(function () {
         var queryParams = {};
 
         // URL we need to query the database
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast?";
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?";
 
         // search results
         queryParams.q = $("#searchText")
@@ -128,7 +128,7 @@ $(document).ready(function () {
               queryParams.lon = response.city.coord.lon;
               queryParams.appid = "0abab2ed9c93a0d35e95bde6214af737";
 
-              var queryUV = "http://api.openweathermap.org/data/2.5/uvi?";
+              var queryUV = "https://api.openweathermap.org/data/2.5/uvi?";
 
               return queryUV + $.param(queryParams);
             }
@@ -166,15 +166,15 @@ $(document).ready(function () {
 
             //Day 2 - 5 Icons
             var weatherIcon1 = response.list[0].weather[0].icon;
-            $(".img1").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon1 + "@2x.png");
+            $(".img1").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon1 + "@2x.png");
             var weatherIcon2 = response.list[1].weather[0].icon;
-            $(".img2").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon2 + "@2x.png");
+            $(".img2").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon2 + "@2x.png");
             var weatherIcon3 = response.list[2].weather[0].icon;
-            $(".img3").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon3 + "@2x.png");
+            $(".img3").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon3 + "@2x.png");
             var weatherIcon4 = response.list[3].weather[0].icon;
-            $(".img4").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon4 + "@2x.png");
+            $(".img4").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon4 + "@2x.png");
             var weatherIcon5 = response.list[4].weather[0].icon;
-            $(".img5").attr("src", "http://openweathermap.org/img/wn/" + weatherIcon5 + "@2x.png");
+            $(".img5").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon5 + "@2x.png");
 
           }
 
