@@ -9,6 +9,14 @@ $(document).ready(function () {
     $("#error").empty();
   }
 
+  // click button add results to search feild
+  $('button').click(function(event){
+    event.preventDefault();
+    clear ();
+    $('#searchText').val($(this).val())
+  });
+
+  //press enter and update previous search results
   $("#searchText").keypress(function (event) {
     if (event.which == 13) {
       event.preventDefault();
@@ -28,8 +36,12 @@ $(document).ready(function () {
       $("#previous-results").empty();
 
       for (var i = 0; i < weatherData.length; i++) {
-        var resultEl = document.createElement("li");
+        var resultEl = document.createElement("button");
         resultEl.textContent = weatherData[i];
+        resultEl.value= weatherData[i];
+        resultEl.style.margin = "2px";
+        resultEl.style.width = "7vw";
+        resultEl.style.borderRadius = "10px";
         $("#previous-results").append(resultEl);
       }
     }
@@ -40,21 +52,29 @@ $(document).ready(function () {
 
     if (previousInput == null) {
       var tempInput = ["Perth, AU"];
-      var resultEl = document.createElement("li");
+      var resultEl = document.createElement("button");
       resultEl.textContent = tempInput;
+      resultEl.value = tempInput;
+      resultEl.style.margin = "2px";
+      resultEl.style.width = "7vw";
+      resultEl.style.borderRadius = "10px";
       $("#previous-results").append(resultEl);
     } else {
-      // Render a new li for each previousInput
+      // Render a new button for each previousInput
       for (var i = 0; i < previousInput.length; i++) {
-        var resultEl = document.createElement("li");
+        var resultEl = document.createElement("button");
         resultEl.textContent = previousInput[i];
+        resultEl.value = previousInput[i];
+        resultEl.style.margin = "2px";
+        resultEl.style.width = "7vw";
+        resultEl.style.borderRadius = "10px";
         $("#previous-results").append(resultEl);
       }
     }
 
   };
 
-  //submit API request with button click
+  //submit API request with enter button
   $("#searchText").keypress(function (event) {
     if (event.which == 13) {
       event.preventDefault();
