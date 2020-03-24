@@ -47,152 +47,161 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    background-color: black;
+}
+
 .hide {
     display: none;
 }
 
-body {
-    position: relative;
-    min-height: 100%;
-    min-height: 160vh;
-    margin: 20px 0px;
+/*Header*/
+
+#header {
+    width: 100%;
+    background-color: palevioletred;
+    padding: 30px;
+}
+
+.title {
+    font-size: 5vh;  
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.subtitle {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2vh;
+}
+
+#header p{
+    font-size: 3vh;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+aside {
+    background-color: orange;
+    padding: 30px;
+    width: 100%;
+    height: 600px; 
+    font-family: 'Share Tech Mono', monospace;
 }
 
 /*search area*/
 
-.search-container {
-    border: transparent;
-    text-align: center;
-    height: 40%;
-    background-color: skyblue;
-    border-radius: 30px;
+nav {
+    width: 100;
+    margin-left: -30px;
 }
 
-header {
-margin: 20px 0;
-padding: 10px;
+.search-container {
+    border: transparent;
+    text-align: start;
+    padding: 20px;
+    background-color: skyblue;
 }
 
 .search-container h4 {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 5vh;
-    padding: 10px;
-}
-
-.search-container p {
-    padding-left: 30px;
+    font-size: 3vh;
 }
 
 #searchText {
-    width: 60%;
-    height: 40px;
+    width: 90%;
     font-size: 2vh;
-    margin: 5px;
-    margin-bottom: 10px;
-    padding: 20px;
-    text-align: center;
+    text-align: end; 
+    padding: 10px;   
 }
 
-input {
-    padding-left: 30px;
+.boxProp {
+    padding-top: 10px;
+    vertical-align: middle;
+    width: 50px;
 }
 
 #error {
+    float: right;
     color: red;
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: 'Share Tech Mono', monospace;
-}
-
-#previous-results {
-    padding-left: 30px;
+    text-align: end;
 }
 
 /*Today Container */
 
 main {
-    margin: 20px 0;
-    padding: 10px;
-    }
+    margin-left: -30px;
+}
 
 .today-container {
     background-color: palegreen;
     height: 60%;
     border: none;
-    padding: 50px;
-    border-radius: 50px;
+   padding: 30px;
 }
 
 .location {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 7vh;
-    padding: 10px;
+    font-size: 9vh;
+    text-align: center;
+}
+
+.img1 {
+    width: 120%;
 }
 
 .temp1 {
     font-family: 'Share Tech Mono', monospace;
-    padding: 10px;
-    font-size: 4vh;
+    font-size: 5vh;
     color: orange;
+    text-align: start;
 }
 
+#dayInfo {
+    padding: 30px;
+    padding-right: 80px;
+}
 .date1 {
-    padding: 10px;
+    color: orange;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 4vh;
+    font-size: 6vh;
+    text-align: center;
 }
 
 .weatherCon,
 .humidity,
 .wind,
 .uvIndex {
-    padding: 10px;
     font-size: 3vh;
-    text-align: start;
-}
-
-.img1 {
-    width: 100% auto;
-    height: 100%;
+    text-align: center;
 }
 
 /*Futue Box */
 
-.future-container {
-    background-color: palegoldenrod;
-    text-align: center;
-    height: 35%;
-    padding: 20px;
-    border-radius: 20px;
+section {
+    margin-left: -30px;
+    width: 102%;
 }
+
+#tomorrow-container {
+    background-color: palegoldenrod;
+    padding: 20px;
+    text-align: center;
+}
+
+#day2, #day3, #day4, #day5 {
+    width: 100%;
+}
+
 .date2, .date3, .date4, .date5 {
+    
 font-family: 'Share Tech Mono', monospace;
 }
 
-/*Footer*/
-
-#footer {
-    position: absolute;
-    border: purple dotted 5px;
-    bottom: 0;
-    right: 30px;
-    width: 30%;
-    padding: 10px;
-    height: 13rem;
-    background-color: palevioletred;
-    border-radius: 30px;
-}
-
-.title {
-    font-size: 5vh;
+footer {
+    background-color: mediumslateblue;
+    font-family: 'Frijole', cursive;
+    color: white;
     text-align: end;
-}
-
-.subtitle {
-    font-size: 2.5vh;
-    text-align: end;
-}
-
-.bottomspacer {
-    background-color: transparent;
-    margin-top: 5vh;   
+    padding: 20px;
+    margin-left: -30px;
 }

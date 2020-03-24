@@ -28,9 +28,9 @@ $(document).ready(function () {
       $("#previous-results").empty();
 
       for (var i = 0; i < weatherData.length; i++) {
-        var buttonEl = document.createElement("button");
-        buttonEl.textContent = weatherData[i];
-        $("#previous-results").append(buttonEl);
+        var resultEl = document.createElement("li");
+        resultEl.textContent = weatherData[i];
+        $("#previous-results").append(resultEl);
       }
     }
   });
@@ -40,15 +40,15 @@ $(document).ready(function () {
 
     if (previousInput == null) {
       var tempInput = ["Perth, AU"];
-      var previousEl = document.createElement("button");
-      previousEl.textContent = tempInput;
-      $("#previous-results").append(previousEl);
+      var resultEl = document.createElement("li");
+      resultEl.textContent = tempInput;
+      $("#previous-results").append(resultEl);
     } else {
       // Render a new li for each previousInput
       for (var i = 0; i < previousInput.length; i++) {
-        var buttonEl = document.createElement("button");
-        buttonEl.textContent = previousInput[i];
-        $("#previous-results").append(buttonEl);
+        var resultEl = document.createElement("li");
+        resultEl.textContent = previousInput[i];
+        $("#previous-results").append(resultEl);
       }
     }
 
@@ -101,6 +101,7 @@ $(document).ready(function () {
 
           $("#today").removeClass('hide');
           $("#future").removeClass('hide');
+          $("#logo").removeClass('hide');
 
           clear();
 
@@ -164,7 +165,7 @@ $(document).ready(function () {
             $(".temp5").html("Temp: " + response.list[4].main.temp + "&deg;C");
             $(".humid5").text("Humidity: " + response.list[4].main.humidity + "%");
 
-            //Day 2 - 5 Icons
+            //Day Weather Icons
             var weatherIcon1 = response.list[0].weather[0].icon;
             $(".img1").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon1 + "@2x.png");
             var weatherIcon2 = response.list[1].weather[0].icon;
