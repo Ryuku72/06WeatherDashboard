@@ -214,7 +214,7 @@ $(document).ready(function () {
           $(".date1").text(dayName);
           $(".weatherCon").text("Conditions: " + response.list[0].weather[0].main);
           $(".wind").text("Wind: " + response.list[0].wind.speed + "m/sec");
-          $(".humidity").text("Humid: " + response.list[0].main.humidity + "%");
+          $(".humidity").text("Humidity: " + response.list[0].main.humidity + "%");
 
           // Converts the temp to Celsus with the below formula
           $(".temp1").html(response.list[0].main.temp + "&deg;C");

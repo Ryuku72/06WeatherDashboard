@@ -174,7 +174,7 @@ aside {
 
 aside h2 {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 3vh;
+    font-size: 2.5vw;
     color: white;
     padding-bottom: 20px;
 }
@@ -225,17 +225,17 @@ nav {
 
 .location {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 5vw;
+    font-size: 12vh;
     text-align: center;
 }
 
 .img1 {
-    width: 450px;
+    width: 25vw;
 }
 
 .temp1 {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 3vw;
+    font-size: 6vh;
     text-align: start;
 }
 
@@ -259,8 +259,8 @@ nav {
     padding: 10px;
     font-family: 'Fredericka the Great', cursive;
     color: black;
-    font-size: 1.5vw;
-    line-height: 1vh;
+    font-size: 2.5vw;
+    line-height: 3vh;
 
 }
 
@@ -315,44 +315,16 @@ footer {
     }
 
     .temp1 {
-        font-size: 4vh;
+        font-size: 8vw;
     }
 
     .location {
-        font-size: 10vh;
+        font-size: 14vh;
 
     }
-
-    .date1,
-    .weatherCon,
-    .humidity,
-    .wind,
-    .uvIndex {
-        font-size: 3vh;
-
-    }
-
-    #clock {
-        float: right;
-        line-height: 1vh;
-    }
-
-    #dateSet {
-        float: left;
-        line-height: 1vh;
-    }
-
-}
-
-@media screen and (max-width: 430px) {
 
     .img1 {
-        width: 100%;
-    }
-
-    .location {
-        font-size: 5vh;
-
+        width: 50vw
     }
 
     #dayInfo {
@@ -398,6 +370,29 @@ footer {
         grid-column: 2;
         grid-row: 3;
   
+    }
+
+    #clock {
+        float: right;
+        line-height: 1vh;
+    }
+
+    #dateSet {
+        float: left;
+        line-height: 1vh;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .img1 {
+        width: 100%;
+    }
+
+    .location {
+        font-size: 5vh;
+
     }
 
     .date2,
