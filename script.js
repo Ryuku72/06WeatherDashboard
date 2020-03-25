@@ -1,3 +1,66 @@
+//lets have a clock
+updateClock();
+updateDate();
+
+function updateClock () {
+  var currentTime = new Date ();
+  var currentHours = currentTime.getHours();
+  var currentMinutes = currentTime.getMinutes();
+  var currentSeconds = currentTime.getSeconds();
+
+
+  // Pad the minutes and seconds with leading zeros, if required
+  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+
+  // Choose either "AM" or "PM" as appropriate
+  var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+  // Convert the hours component to 12-hour format if needed
+  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+  // Convert an hours component of "0" to "12"
+  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+  // Compose the string for display
+  var currentTimeString =  currentHours + ":" + currentMinutes + ":"+ currentSeconds +" "+ timeOfDay;
+
+  // Update the time display
+  document.getElementById("clock").innerText = currentTimeString;
+}
+
+function updateDate() {
+  var currentTime = new Date ();
+  var currentMonth = currentTime.getMonth(); 
+  
+  //Convert the month component to text month
+  currentMonth = ( currentMonth == 0 ) ? "January" : currentMonth;
+  currentMonth = ( currentMonth == 1 ) ? "February" : currentMonth;
+  currentMonth = ( currentMonth == 2 ) ? "March" : currentMonth;
+  currentMonth = ( currentMonth == 3 ) ? "April" : currentMonth;
+  currentMonth = ( currentMonth == 4 ) ? "May" : currentMonth;
+  currentMonth = ( currentMonth == 5 ) ? "June" : currentMonth;
+  currentMonth = ( currentMonth == 6 ) ? "July" : currentMonth;
+  currentMonth = ( currentMonth == 7 ) ? "August" : currentMonth;
+  currentMonth = ( currentMonth == 8 ) ? "September" : currentMonth;
+  currentMonth = ( currentMonth == 9 ) ? "October" : currentMonth;
+  currentMonth = ( currentMonth == 10) ? "November" : currentMonth;
+  currentMonth = ( currentMonth == 11) ? "December" : currentMonth;
+  
+  var currentDate = currentTime.getDate();
+  
+  // Add suffix to the date
+  currentDate = ( currentDate == 1 || currentDate == 21 || currentDate == 31 ) ? currentDate + "st" : currentDate;
+  currentDate = ( currentDate == 2 || currentDate == 22 ) ? currentDate + "nd" : currentDate;
+  currentDate = ( currentDate == 3 ) || currentDate == 23 ? currentDate + "rd" : currentDate;
+  currentDate = ( currentDate > 3 || currentDate < 21 || currentDate > 23 || currentDate < 31 ) ? currentDate + "th" : currentDate;
+
+  var todaysDate = currentMonth +  " " + currentDate;
+
+  // Update the time display
+  document.getElementById("dateSet").innerText = todaysDate;
+}
+
 //enable JQUERY
 $(document).ready(function () {
 
@@ -135,7 +198,7 @@ $(document).ready(function () {
 
         $("#today").removeClass('hide');
         $("#future").removeClass('hide');
-        $("#logo").removeClass('hide');
+        $("#dateSet").removeClass('hide');
 
         clear();
 
@@ -150,11 +213,21 @@ $(document).ready(function () {
           $(".location").text(response.city.name);
           $(".date1").text(dayName);
           $(".weatherCon").text("Conditions: " + response.list[0].weather[0].main);
-          $(".wind").text("Wind Speed: " + response.list[0].wind.speed + "m/sec");
+          $(".wind").text("Wind Speed: " + response.list[0].wind.speed + " m/sec");
           $(".humidity").text("Humid: " + response.list[0].main.humidity + "%");
 
           // Converts the temp to Celsus with the below formula
           $(".temp1").html(response.list[0].main.temp + "&deg;C");
+
+          if (response.list[0].main.temp >= 25) {
+            $(".temp1").css('color', 'red');
+          }
+          if (response.list[0].main.temp < 25 ){
+            $(".temp1").css('color', 'orange');
+          } 
+          if (response.list[0].main.temp <= 10 ){
+            $(".temp1").css('color', 'blue');
+          } 
 
           //UV index Query
           function UVsearch() {
@@ -217,3 +290,5 @@ $(document).ready(function () {
       });
   };
 });
+
+

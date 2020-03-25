@@ -14,8 +14,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
-<body>
-
+<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+    
     <div class="container-fluid">
 
         <header>
@@ -25,7 +25,7 @@
             </header>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
 
                     <aside>
                         <h2>Previous Search Results</h2>
@@ -34,7 +34,7 @@
 
                 </div>
 
-                <div class="col-md-9">
+                <div class="col-md-10">
 
                     <nav>
                         <div class="search-container">
@@ -59,7 +59,7 @@
                         <div class="today-container">
                             <div id="today" class="hide">
                                 <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-md-4" id="dayHero">
 
                                         <h1 class="location">Location</h1>
                                         <div class="row">
@@ -74,7 +74,7 @@
 
                                     </div>
 
-                                    <div class="col-sm-8" id="dayInfo">
+                                    <div class="col-md-8" id="dayInfo">
                                         <p class="date1">Day 1</p>
                                         <p class="weatherCon">Weather Condition</p>
                                         <p class="humidity">Humidty</p>
@@ -135,7 +135,9 @@
 
                     </div>
                     <footer>
-                        <h3 class="hide" id="logo">Foreign</h3>
+                        <p class="hide" id="dateSet"></p>
+                        <p id="clock"></p>
+        
                     </footer>
                 </div>
 
