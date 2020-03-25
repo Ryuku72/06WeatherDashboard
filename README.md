@@ -69,7 +69,6 @@ Additional script was added like button click vs keypress, hiding elements and t
 
 Though kind of silly, really liked the queryParams component of constructing a weblink. 
 
-
 <a name="CSS">
 
 ### Implementing CSS old New
@@ -92,6 +91,7 @@ Currently, I really wanted to implement some more flashing items.
 
 As always time runs out and you got to move on.
 
+Note: very minor media queries as bootstrap did a lot of heavy lifting here and the website is simple.
 
 <a name="extra">
 
@@ -104,12 +104,19 @@ Im terms of the expectations of the brief I am happy. I had all the major requir
 4. Future dates are supplied with relavent information
 5. Previous search results are pinned on the page and can trigger a search
 
-However, there are minor issues
-1. Still don't use loops when needed. 
-2. Overall website is a little lackluster
+Personal feats
+1. Apply a limit to the array
+2. bootstrap comfort
+3. Jquery knowlegde
+4. Starting to see loops and how to constuct them
+5. Speed of my logic to build the script
+
+However, there are remaining issues
+1. Still don't use loops enough (for example 'future-container'). 
+2. Overall website is a little lackluster. Needs icons, picture backgrounds and flare
 3. Did not use data-name or data-set
 4. Some Javascript code could be written in jquery
-5. Implementing a geolocation would have been nice
+5. Implementing a geolocation would have been nice when opening the page
 6. When entering an incorrect location make sure it doesn't get pinned to the previous search results
 
 Overall, things feel like they are getting easier to grasp but as a result the expectation is higher.
