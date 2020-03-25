@@ -225,7 +225,7 @@ $(document).ready(function () {
           if (response.list[0].main.temp < 25 ){
             $(".temp1").css('color', 'orange');
           } 
-          if (response.list[0].main.temp <= 10 ){
+          if (response.list[0].main.temp <= 15 ){
             $(".temp1").css('color', 'blue');
           } 
 
