@@ -210,14 +210,6 @@ nav {
     width: 50px;
 }
 
-#error {
-    float: right;
-    color: red;
-    font-size: 2vh;
-    font-family: 'Share Tech Mono', monospace;
-    text-align: end;
-}
-
 /*Today Container */
 
 .today-container {

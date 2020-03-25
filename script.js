@@ -69,7 +69,6 @@ $(document).ready(function () {
   // clear search box
   function clear() {
     $(".search").empty();
-    $("#error").empty();
   }
 
   // click button add results to search feild
@@ -186,7 +185,8 @@ $(document).ready(function () {
         url: queryURL,
         method: "GET",
         error: function () {
-          $("#error").html("#Error404: No Such Location")
+          $("#searchText").val("#Error404 : No Such Location"),
+          $("#searchText").css("color", "red")
         }
       })
 

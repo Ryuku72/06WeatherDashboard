@@ -29,6 +29,7 @@ The weather API required pulling information from the OpenWeatherMap API through
 * [Learning curve, issues and ongoing problems](#extra)
 * [Additional Information](#ref)
 
+
 <a name="HTML">
 
 ### Building the DayPlanner HTML
@@ -42,6 +43,7 @@ By design the base model or indexold.html needed to just have the following elem
 4. a side bar for previous search results
 
 Spent sometime playing with bootstrap and just constructing things to play the part and didn't invest much time to how bad it looked. Once the project was constructed I moved straight to the script.
+
 
 <a name="JS">
 
@@ -59,11 +61,14 @@ Interesting note was using date + time outside of the AJAX but using days inside
 
 Maybe the hardest component here was using LocalStorage and JSON because the nature of the Ajax information. It took a while to realise that renewing items only occurs once you clear previous information and applying a limit on the array was something new. 
 
+However, when entering an incorrect location the result still applied to the array. I tried to put the localStorage function inside the AJAX to stop error based inputs applying to the array but lucked out. Theory would be, if the value to the SearchText became Error then input would not be added to array. In other words a checker needs to be implemented. 
+
 I abandoned using data-name for buttons and submitted to using values, was not successful with implementing .done, .success and .fail. I just stuck with .then as well as ended error to create the 'no such location' text in the SearchText input box. Initial included a timeout but found no reason for this project. Could have used more loops especially in regards to Ajax but ran out of time.
 
 Additional script was added like button click vs keypress, hiding elements and the clock component.
 
 Though kind of silly, really liked the queryParams component of constructing a weblink. 
+
 
 <a name="CSS">
 
@@ -105,8 +110,10 @@ However, there are minor issues
 3. Did not use data-name or data-set
 4. Some Javascript code could be written in jquery
 5. Implementing a geolocation would have been nice
+6. When entering an incorrect location make sure it doesn't get pinned to the previous search results
 
 Overall, things feel like they are getting easier to grasp but as a result the expectation is higher.
+
 
 <a name="ref">
 
