@@ -213,7 +213,7 @@ $(document).ready(function () {
           $(".location").text(response.city.name);
           $(".date1").text(dayName);
           $(".weatherCon").text("Conditions: " + response.list[0].weather[0].main);
-          $(".wind").text("Wind Speed: " + response.list[0].wind.speed + " m/sec");
+          $(".wind").text("Wind: " + response.list[0].wind.speed + "m/sec");
           $(".humidity").text("Humid: " + response.list[0].main.humidity + "%");
 
           // Converts the temp to Celsus with the below formula

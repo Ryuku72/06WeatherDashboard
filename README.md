@@ -91,7 +91,7 @@ Currently, I really wanted to implement some more flashing items.
 
 As always time runs out and you got to move on.
 
-Note: very minor media queries as bootstrap did a lot of heavy lifting here and the website is simple.
+Note: very minor media queries as bootstrap did a lot of heavy lifting here and the website is simple. Used CSS grid for mobile phone use. Very nice! 
 
 <a name="extra">
 
