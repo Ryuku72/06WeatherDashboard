@@ -1,9 +1,11 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/HomeworkW6?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/HomeworkW6?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/HomeworkW6?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/06WeatherDashboard?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/06WeatherDashboard?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/06WeatherDashboard?style=for-the-badge)
 
-# HomeWorkW6
-Weather Dashboard || Server-side API
+# Weather Dashboard
+__PROJECT06: 26 Mar 2020__
+<br>
+https://ryuku72.github.io/06WeatherDashboard/
 
 ## Aim // Introduction
 This week was the introduction to AJAX and appending information from an API onto our own websites. Like usual there were a number of previous skills required primarily localStorage, appending, applying attributes, Jquery that played large roles in this weeks project; the Weather API.
